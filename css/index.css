@@ -3,7 +3,7 @@
     src: url("../src/Miso-Bold/miso-regular.ttf");
 }
 .mison-font {
-    font-family: misoFont;
+    font-family: misoFont, 'Roboto', serif;
 }
 
 .social-icons {
@@ -201,7 +201,8 @@
 } */
 .collapsible {
     padding: .8rem 1.2rem;
-    margin: 1.2rem;
+    margin: 0 1.2rem;
+    margin-bottom: 5px;
     text-align: left;
     outline: none;
     font-size: 1rem;
@@ -222,6 +223,7 @@
 .content {
     padding: 0 1.2rem;
     margin: 0 1.2rem;
+    margin-bottom: 1rem;
     overflow: hidden;
     background-color: transparent;
     color: black;
@@ -239,6 +241,7 @@
     border: 3px solid white;
 
     background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 /* ============================================= Skills Section =============================================*/

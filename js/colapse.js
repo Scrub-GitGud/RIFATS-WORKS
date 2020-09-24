@@ -26,6 +26,26 @@ var i;
 //   });
 // }
 
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     var content = this.nextElementSibling;
+
+//     if (content.classList.contains("rise")) {
+//         content.classList.remove("rise")
+//         this.classList.remove("active")
+//         return
+//     }
+
+//     for(j = 0; j < coll.length; j++) {
+//         coll[j].nextElementSibling.classList.remove("rise")
+//         coll[j].classList.remove("active")
+//     }
+
+//     this.classList.toggle("active");
+//     content.classList.add("rise")
+//   });
+// }
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     var content = this.nextElementSibling;
@@ -33,15 +53,21 @@ for (i = 0; i < coll.length; i++) {
     if (content.classList.contains("rise")) {
         content.classList.remove("rise")
         this.classList.remove("active")
+        this.childNodes[1].classList.remove("fa-minus")
+        this.childNodes[1].classList.add("fa-plus")
         return
     }
 
     for(j = 0; j < coll.length; j++) {
         coll[j].nextElementSibling.classList.remove("rise")
         coll[j].classList.remove("active")
+        coll[j].childNodes[1].classList.remove("fa-minus")
+        coll[j].childNodes[1].classList.add("fa-plus")
     }
 
     this.classList.toggle("active");
     content.classList.add("rise")
+    this.childNodes[1].classList.remove("fa-plus")
+    this.childNodes[1].classList.add("fa-minus")
   });
 }
