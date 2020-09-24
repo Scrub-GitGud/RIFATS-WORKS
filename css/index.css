@@ -216,11 +216,9 @@
     font-size: 1rem;
     transition: all .2s;
 
-    /* display: none; */
     height: 0;
 }
 .rise {
-    /* display: block; */
     height: 20%;
     border: 3px solid white;
 
@@ -229,7 +227,7 @@
 }
 @media (max-width: 768px) {
     #section-5 {
-        /* height: 90vh; */
+        height: 90vh;
     }
     .collapsible {
         padding: .8rem 1rem;
