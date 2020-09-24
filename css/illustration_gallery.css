@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+
+:root {
+    /* --overlay-color: rgba(0, 255, 136, 0.87); */
+    --overlay-color: #1f232ce5;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    line-height: 1.4;
+}
+.gallary-container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    background: var(--overlay-color);
+    cursor: pointer;
+}
+.item::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+
+
+@media(max-width: 800px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.overlay-clr-newsred { background-color: #c72727; }
+.overlay-clr-stonehenge { background-color: #7ab436; }
+.overlay-clr-xstatus { background-color: #fdc010; }
+.overlay-clr-secretholder { background-color: #35c961; }
+.overlay-clr-fishmarket { background-color: #9700ed; }
+.overlay-clr-bdtravels { background-color: #1fb622; }
+.overlay-clr-black { background-color: #000000; }
