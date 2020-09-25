@@ -110,6 +110,10 @@ img {
 .txt-danger { color: var(--danger-color); }
 .txt-warning { color: var(--warning-color); }
 .txt-success { color: var(--success-color); }
+.bold-span {
+    font-weight: bolder;
+    font-size: 17px;
+}
 @media(max-width: 768px){
     .txt-xl {
         font-size: 3rem;
@@ -517,7 +521,7 @@ table th {
     margin-right: 0.6rem;
 }
 
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     .nav {
         display: block;
         text-align: center;
@@ -530,7 +534,7 @@ table th {
         text-align: center;
         justify-content: center;
     }
-}
+} */
 
 /* =================================== Dont know what this is =================================== */
 @media(max-width: 768px){
