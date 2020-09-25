@@ -310,6 +310,8 @@ img {
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+    animation: fade-in 0.5s ease-out 1.5s;
+    animation-fill-mode: backwards;
 
     background-color: white;
     border-radius: inherit;
