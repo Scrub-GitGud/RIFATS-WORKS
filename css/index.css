@@ -30,7 +30,7 @@
         top: 0;
     }
     .nav h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin: auto 0;
     }
     .nav ul {
@@ -41,7 +41,7 @@
         margin: auto 0;
     }
     .social-icons {
-        width: 1.7rem;
+        width: 2rem;
         margin-left: 0.1rem;
     }
 }
@@ -138,6 +138,9 @@
         font-size: .8rem;
         line-height: 1.2;
     }
+    .setion-content-1 a {
+        z-index: 2;
+    }
 }
 .section .section-props {
     position: absolute;
@@ -201,6 +204,7 @@
     bottom: -3.8px;
     right: 1rem;
     width: 4rem;
+    z-index: 5;
 }
 .plant-2-props {
     position: absolute;
@@ -545,3 +549,26 @@
         padding: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================= Utility Temp Fix =============================================*/
+@media(max-width: 600px) {
+    .btn-effect-1::after {
+        background-color: transparent;
+    }
+    .btn-effect-1:hover::after {
+        background-color: white;
+        transform: scaleX(1.2) scaleY(1.6);
+        opacity: 0;
+    }
+} 
