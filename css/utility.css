@@ -320,6 +320,7 @@ img {
     background-color: white;
 }
 .btn-effect-1:hover::after {
+    border-radius: 5px;
     transform: scaleX(1.2) scaleY(1.6);
     opacity: 0;
 }
