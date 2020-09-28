@@ -218,6 +218,14 @@
     left: 1rem;
     width: 5rem;
 }
+@media (max-width: 500px) {
+    .plant-1-props {
+        width: 3rem;
+    }
+    .plant-2-props {
+        width: 2rem;
+    }
+}
 /* ============================================= section-3 | Game =============================================*/
 #section-3 {
     background-image: linear-gradient(to right, #76b852, #8dc26f);
@@ -258,6 +266,14 @@
 @media (max-width: 768px) {
     #section-3 {
         background-image: linear-gradient(to top, #fe8c00, #f83600);
+    }
+}
+@media (max-width: 500px) {
+    .trophy-props {
+        width: 4rem;
+    }
+    .sand-clock-props {
+        width: 1.5rem;
     }
 }
 /* ============================================= section-4 | Illustration =============================================*/
