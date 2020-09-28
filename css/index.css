@@ -201,14 +201,14 @@
 }
 .plant-1-props {
     position: absolute;
-    bottom: -3.8px;
+    bottom: 0px;
     right: 1rem;
     width: 4rem;
     z-index: 5;
 }
 .plant-2-props {
     position: absolute;
-    bottom: -3.8px;
+    bottom: 0px;
     right: 4rem;
     width: 3rem;
 }
