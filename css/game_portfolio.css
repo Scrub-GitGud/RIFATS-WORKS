@@ -50,7 +50,32 @@ body {
 
 
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
+    .game iframe {
+        height: 25rem;
+    }
+    .game h1 img{
+        margin-right: .1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .game iframe {
+        height: 15rem;
+    }
+}
+
+@media(max-width: 350px) {
+    .games {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .game {
+        margin: 1rem auto;
+        width: 100%;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
     .game iframe {
         height: 10rem;
     }
